@@ -42,7 +42,7 @@ class GetSARIMAX(Forecast):
     """
     This method is used to forecast the heating consumption using the SARIMA model.
     """
-    def forecast(data, order:tuple=(2, 0, 1), seasonal_order:tuple=(1, 1, 1, 1)):
+    def forecast(data, order:tuple=(2, 0, 1)):
         model = SARIMAX(data, order=order)
         model_fit = model.fit()
         return model_fit.predict()[1:]

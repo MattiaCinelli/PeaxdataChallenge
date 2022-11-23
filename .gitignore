@@ -7,6 +7,9 @@ __pycache__/
 *.so
 *.jpg
 *.jpeg
+*.png
+*.txt
+*.csv
 *.DS_Store
 *.venv*
 

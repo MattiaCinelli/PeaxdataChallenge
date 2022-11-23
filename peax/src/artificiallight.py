@@ -33,7 +33,7 @@ class ArtificialLighting():
         return conditions
 
     def plot_data(self, data, title:str, xlabel:str, ylabel:str, fig_name:str, figsize=(13, 5)):
-        fig1 = plt.figure(figsize=figsize)
+        _ = plt.figure(figsize=figsize)
         data.plot()
         plt.suptitle(title)
         plt.xlabel(xlabel)
